@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/kitsuFragment">
+
+    <fragment
+        android:id="@+id/kitsuFragment"
+        android:name="com.example.kitsu_android4.ui.fragment.KitsuFragment"
+        android:label="fragment_kitsu"
+        tools:layout="@layout/fragment_kitsu" >
+        <action
+            android:id="@+id/action_kitsuFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.kitsu_android4.ui.fragment.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument android:name="id"
+            app:argType="integer"/>
+    </fragment>
+</navigation>
