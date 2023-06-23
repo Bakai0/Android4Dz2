@@ -9,5 +9,5 @@ data class AnimeModel(
     val id: Int,
     @SerializedName("attributes")
     val attributes: Attributes
-
-)
+) {
+}

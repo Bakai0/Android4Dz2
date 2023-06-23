@@ -1,4 +1,4 @@
-package com.example.kitsu_android4.ui.fragment.detail
+package com.example.kitsu_android4.ui.fragment.kitsu.detail
 
 import androidx.lifecycle.ViewModel
 import com.example.kitsu_android4.repository.AnimeRepository

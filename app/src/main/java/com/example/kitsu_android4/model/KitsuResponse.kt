@@ -7,6 +7,7 @@ data class KitsuResponse<T>(
     @SerializedName("links")
     val links: Links,
     @SerializedName("data")
-    val animeList: List<T>
+    val data: List<T>
 
-)
+) {
+}
